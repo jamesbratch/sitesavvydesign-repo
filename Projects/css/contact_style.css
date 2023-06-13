@@ -1,0 +1,140 @@
+.contactUsFlex {
+    display: flex;
+    flex-direction: row;
+    margin: 6em 0;
+}
+
+.contactUsLeft,
+.contactUsRight {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: inherit;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    font-family: 'Gothic A1', sans-serif;
+    width: 70%;
+    margin: 8px 0;
+    padding: 1em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: inherit;
+    color: #fff;
+
+    transition: all 200ms ease-in-out;
+}
+
+input[type="submit"]:hover {
+    border-color: #D7223B;
+    color: #D7223B;
+}
+
+.contactUsRight {
+    position: relative;
+    text-align: center;
+}
+
+.contactUsRightImage,
+.contactUsRightText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact,
+.us {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.capitalLetter {
+    font-weight: 800;
+    font-size: 5rem;
+    letter-spacing: -8px;
+}
+
+.line {
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    width: 150px;
+    height: 2px;
+    background: #fff;
+}
+
+.helpText {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 200;
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: left;
+}
+
+.contactUsBgImage {
+    height: 25.000em;
+    width: 31.250em;
+    opacity: 0.2;
+    /* text-align: center; */
+    filter: blur(10px);
+}
+
+/* responsive  */
+
+@media (max-width: 1200px) {
+    .contactUsLeft,
+    .contactUsRight {
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+
+    .contactUsRightImage,
+    .contactUsRightText {
+        left: 46%;
+    }
+}
+
+@media (max-width: 900px) {
+    .contactUsFlex {
+        text-align: center; 
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 534px) {
+    .contactUsRight {
+        width: 100%;
+    }
+
+    .contact,
+    .us {
+    font-size: 2rem;
+    }
+
+    .contactUsBgImage {
+        width: 60%;
+    }
+}
+

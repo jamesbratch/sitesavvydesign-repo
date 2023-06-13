@@ -1,0 +1,122 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/*
+font-family: 'Gothic A1', sans-serif;
+font-family: 'Noto Serif', serif;
+*/
+
+body {
+    background-color: #191329;
+}
+
+.pagePadding {
+    padding: 0 1.5em;
+}
+
+.maxWidth {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Previous Work */
+
+.previousWorkTitle h3 {
+    font-family: 'Noto Serif', serif;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2em;
+    max-width: 600px;
+    padding: 1.5em 0;
+}
+
+.previousWork {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5em;
+}
+
+.previousWorkTextSection {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.previousWorkTextSection h3 {
+    font-family: 'Noto Serif', serif;
+    color: #fff;
+    font-size: 1.125;
+}
+
+.previousWorkTextSection p {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-size: 1.125;
+    margin: 1.5em 0;
+}
+
+.previousWorkTextSection ul li {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-size: 1.125;
+    margin: 0.5em 0 0 12px;
+}
+
+.previousWorkImageSection {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.previousWorkSecoundImageSection {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/* responsive  */
+
+@media (max-width: 1200px) {
+
+    .previousWorkTextSection,
+    .previousWorkImageSection {
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .previousWorkTitle{
+    }
+    
+     .previousWorkTitle h3 {
+        margin: 0 auto;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .previousWork {
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .previousWorkTechieHippo {
+        flex-direction: column-reverse;
+    }
+
+    .previousWorkSecoundImageSection {
+        margin: 0 auto;
+    }
+    
+    .previousWorkTextSection {
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+}

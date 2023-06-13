@@ -1,0 +1,38 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/*
+font-family: 'Gothic A1', sans-serif;
+font-family: 'Noto Serif', serif;
+*/
+
+body {
+    background-color: #191329;
+}
+
+.pagePadding {
+    margin: 0 1.5em;
+}
+
+.maxWidth {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Title Section Contact */
+
+.contactTitleSection p {
+    font-family: 'Noto Serif', serif;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: left;
+    max-width: 900px;
+
+    padding-top: 2em;
+} 
+

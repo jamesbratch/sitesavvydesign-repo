@@ -1,0 +1,383 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/*
+font-family: 'Gothic A1', sans-serif;
+font-family: 'Noto Serif', serif;
+*/
+body {
+    background-color: #191329;
+}
+
+.pagePadding {
+    padding: 0 1.5em;
+}
+
+.maxWidth {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+
+.heroSectionFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.heroSectionText {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-self: center;
+}
+
+.heroSectionText h2 {
+    font-family: 'Noto Serif', serif;
+    color: #fff;
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: -0.125rem;
+}
+
+.heroSectionText p {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin: 1em 0;
+    max-width: 500px;
+}
+
+.letsTalkBTN {
+    background-color: #D7223B;
+    color: #fff;
+    border: none;
+    padding: 0.625em 2em;
+    border-radius: 2em;
+    border: none;
+    font-size: 1.13rem;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    margin-right: 1em;
+
+    transition: all 200ms ease-in-out;
+}
+
+.letsTalkBTN:hover {
+    background-color: #fff;
+    color: #D7223B;
+}
+
+.viewWorkBTN {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid white;
+    padding: 0.625em 2em;
+    border-radius: 2em;
+    font-size: 1.13rem;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+
+    transition: all 200ms ease-in-out;
+}
+
+.viewWorkBTN:hover {
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.heroImage {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;  
+    max-width: 100%;
+}
+
+.imageResponsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Service Section */
+
+.serviceSection {
+    background-color: #2A2343;
+    padding: 5em 0;
+    
+}
+
+.serviceSectionFlex {
+    display: flex;
+    flex-direction: row;
+}
+
+.serviceImage {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+}
+
+.serviceImage img {
+    /* align-self: center; */
+    margin: 0 auto;
+}
+
+.serviceText {
+    flex-basis: 50%;
+    align-self: center;
+}
+
+.serviceText h2 {
+    font-family: 'Noto Serif', serif;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.125rem;
+}
+
+.serviceTextPara {
+    margin: 1.5em 0;
+}
+
+.serviceText p {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;
+    width: 90%;
+    margin: 1em 0;
+}
+
+/* Previous Work */
+
+.previousWorkTitle h3 {
+    font-family: 'Noto Serif', serif;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 2em;
+}
+
+.previousWork {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5em;
+}
+
+.previousWorkTextSection {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.previousWorkTextSection h3 {
+    font-family: 'Noto Serif', serif;
+    color: #fff;
+    font-size: 1.125;
+}
+
+.previousWorkTextSection p {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-size: 1.125;
+    margin: 1.5em 0;
+}
+
+.previousWorkTextSection ul li {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-size: 1.125;
+    margin: 0.5em 0 0 12px;
+}
+
+.previousWorkImageSection {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.previousWorkSecoundImageSection {
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Blog Section */
+
+.blogSection {
+    background-color: #2A2343;
+}
+
+.blogSectionTitle h3 {
+    font-family: 'Noto Serif', serif;
+    color: white;
+    font-size: 1.5rem;
+    padding: 2em 0;
+}
+
+.blogSectionFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: auto;
+    align-content: start;
+}
+
+.blogCard {
+    flex: 0 1 auto;
+    margin: 10px;
+}
+
+.imagecon {
+    aspect-ratio: 16 / 9;
+}
+
+.blogImage {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blogText {
+    width: 100%;
+}
+
+.blogSampleText {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0.6em;
+}
+
+.blogDate {
+    font-family: 'Gothic A1', sans-serif;
+    color: #BEBEBE;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0.6em 0;
+}
+
+.readMoreBtn {
+    font-family: 'Gothic A1', sans-serif;
+    color: #D7223B;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    background-color: inherit;
+    margin-bottom: 2em;
+
+    transition: color 200ms ease-in-out;
+}
+
+.readMoreBtn:hover {
+    /* color: #fff; */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* responsive  */
+
+@media (max-width: 1200px) {
+
+    .heroImage,
+    .heroSectionText {
+        flex-shrink: 1;
+    }
+
+    .serviceImage,
+    .serviceText {
+        flex-shrink: 1;
+    }
+
+    .previousWorkTextSection,
+    .previousWorkImageSection {
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    .heroSectionFlex {
+        flex-direction: column;
+    }
+
+    .heroSectionText {
+        text-align: center;
+    }
+
+    .heroImage {
+        margin-top: 2em;
+    }
+
+    .imageResponsive {
+        width: 60%;
+    }
+
+    .serviceSectionFlex {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    .serviceImage {
+        margin: 0 auto;
+    }
+
+    .serviceText {
+        max-width: 80%;
+        margin: 3em 0 0;
+    }
+     
+    .viewWorkServicesBtn {
+        margin-top: 1em;
+    }
+
+    .previousWorkTitle h3 {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .previousWork {
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .previousWorkTechieHippo {
+        flex-direction: column-reverse;
+    }
+
+    .previousWorkSecoundImageSection {
+        margin: 0 auto;
+    }
+    
+    .previousWorkTextSection {
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+    .blogSectionTitle h3 {
+        text-align: center;
+    }
+
+    .blogSectionFlex {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blogCard {
+        margin: 0 auto;
+    }
+   
+}
+

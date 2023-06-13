@@ -1,0 +1,120 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/*
+font-family: 'Gothic A1', sans-serif;
+font-family: 'Noto Serif', serif;
+*/
+
+body {
+    background-color: #191329;
+}
+
+.pagePadding {
+    padding: 0 1.5em;
+}
+
+.maxWidth {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Services Title Section */
+
+.titleText {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.titleText h2 {
+    font-family: 'Noto Serif', serif;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.titleText p {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.cardMaxWidth {
+    max-width: 1100px;
+}
+
+.cardSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 4rem;
+    margin: 0 auto;
+}
+
+.card {
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #2A2343;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.card img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.cardTitle {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.13rem;
+    text-align: center;  
+    padding-top: 1em;
+}
+
+.cardBody {
+    font-family: 'Gothic A1', sans-serif;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* responsive  */
+
+@media (max-width: 1200px) {
+
+    .cardSection {
+        gap: 0 0.5rem;
+    }
+
+    .card {
+        flex-shrink: 1;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 700px) {
+    .titleText {
+        padding: 1em;
+    }
+}
